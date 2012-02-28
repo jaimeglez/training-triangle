@@ -3,11 +3,29 @@ $LOAD_PATH.unshift( File.join( File.dirname(__FILE__), '../' ) )
 require 'triangle'
 
 describe Triangle do
-  it "should have 3 sides"
-  it "should have 3 angles"
-  it "should have a perimeter"
-  it "should have an area"
-  it "should have a sum with 180"
+
+  it "should have 3 sides" do
+    Triangle.new(3,3,3).sides.size.should eq(3)
+    Triangle.new(3,3,3).sides.size.should_not eq(4) 
+  end
+
+  it "should not have any negative value"
+
+  it "should have 3 angles" do
+    Triangle.new(3,3,3).get_degrees.size.should eq(3)
+  end
+
+  it "should have a perimeter" do
+    Triangle.new(3,3,3).get_perimeter.should eq(9)
+  end
+
+  it "should have an area" do
+    Triangle.new(3,3,3).get_area.should eq(4.5)
+  end
+
+  it "should have a sum with 180" do
+    Triangle.new(3,3,3).get_degrees.inject(:+).should eq(180)
+  end
   
   context "when it has 3 equal sides" do
     it "should be a equilater"
