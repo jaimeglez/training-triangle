@@ -9,6 +9,7 @@ class Triangle
     @sides=[a,b,c]
     @a,@b,@c= a,b,c
     @degrees=[]
+    @result=false
   end
 
   #Adding git commit by Dll
@@ -18,6 +19,9 @@ class Triangle
     #Adding my last commit
     @degrees << 60
     @degrees << 60
+    if ((@degrees.inject(:+)/3)==60) && @degrees.inject(:+)==180
+      @result = true 
+    end
   end
   #Ganon was here
   #Added
@@ -27,8 +31,10 @@ class Triangle
     @perimeter = @sides.inject(:+)
   end
 
-  def get_area
+  def get_area #<<<<< Calculate the triangle's area.
+    #Calculate te area using the next method:
     @area = @b * @a / 2.to_f
+    #Do it!
   end
 
   #new comment for get_totalangles
@@ -38,4 +44,9 @@ class Triangle
   end
   #end of get_totalangles
 
+  def get_eqside
+    if (@a==@b) && (@a==@c)
+      @result = true
+    end
+  end
 end

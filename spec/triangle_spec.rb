@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift( File.join( File.dirname(__FILE__), '../' ) )
+$LOAD_PATH.unshift( File.join( File.dirname(__FILE__), '../lib' ) )
 
 require 'triangle'
 
@@ -12,7 +12,7 @@ describe Triangle do
   it "should not have any negative value"
 
   it "should have 3 angles" do
-    Triangle.new(3,3,3).get_degrees.size.should eq(3)
+    Triangle.new(3,3,3).get_degrees.should eq(true)
   end
 
   it "should have a perimeter" do
@@ -24,12 +24,16 @@ describe Triangle do
   end
 
   it "should have a sum with 180" do
-    Triangle.new(3,3,3).get_degrees.inject(:+).should eq(180)
+    Triangle.new(3,3,3).get_degrees.should eq(true)
   end
   
   context "when it has 3 equal sides" do
-    it "should be a equilater"
-    it "should have 3 equal angles"
+    it "should be a equilater" do
+      Triangle.new(3,3,3).get_eqside.should eq(true)
+    end
+    it "should have 3 equal angles" do
+      Triangle.new(3,3,3).get_eqside.should eq(true)
+    end
   end
 
   context "when it has 2 equal sides & other not" do
