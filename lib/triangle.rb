@@ -13,6 +13,7 @@ class Triangle
 
   #Adding git commit by Dll
   def get_degrees
+    #Adding another commit
     @degrees << 60
     @degrees << 60
     @degrees << 60
