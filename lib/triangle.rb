@@ -1,5 +1,8 @@
+#Class triangle
 class Triangle
 
+  #accesors variables
+  #new comment
   attr_accessor :degress, :sides
   def initialize(a,b,c)
     @sides=[a,b,c]
