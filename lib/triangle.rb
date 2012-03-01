@@ -11,7 +11,7 @@ class Triangle
     @degrees=[]
     @result=false
   end
-
+  # Este es el cambio para el Oso 8=====D
   def get_degrees
     @degrees << 60
     @degrees << 60
