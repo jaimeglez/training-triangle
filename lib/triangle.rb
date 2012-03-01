@@ -18,6 +18,7 @@ class Triangle
   end
   #Added
   #comment to
+  #get perimeter of triangle
   def get_perimeter
     @perimeter = @sides.inject(:+)
   end
