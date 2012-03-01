@@ -5,12 +5,16 @@ class Triangle
     @sides=[a,b,c]
     @a,@b,@c= a,b,c
     @degrees=[]
+    @result=false
   end
 
   def get_degrees
     @degrees << 60
     @degrees << 60
     @degrees << 60
+    if ((@degrees.inject(:+)/3)==60) && @degrees.inject(:+)==180
+      @result = true 
+    end
   end
 
   def get_perimeter
@@ -21,8 +25,9 @@ class Triangle
     @area = @b * @a / 2.to_f
   end
 
-  def get_totalangles
-    @total = @degrees.inject(:+)
+  def get_eqside
+    if (@a==@b) && (@a==@c)
+      @result = true
+    end
   end
-
 end
