@@ -17,6 +17,7 @@ class Triangle
     @degrees << 60
   end
   #Added
+  #comment to
   def get_perimeter
     @perimeter = @sides.inject(:+)
   end
