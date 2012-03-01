@@ -25,7 +25,7 @@ class Triangle
     @perimeter = @sides.inject(:+)
   end
 
-  def get_area
+  def get_area #<<<<< Calculate the triangle's area.
     #Calculate te area using the next method:
     @area = @b * @a / 2.to_f
     #Do it!
