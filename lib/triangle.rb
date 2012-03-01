@@ -30,5 +30,6 @@ class Triangle
   def get_totalangles
     @total = @degrees.inject(:+)
   end
+  #end of get_totalangles
 
 end
