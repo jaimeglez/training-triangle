@@ -31,8 +31,11 @@ class Triangle
     @area = @b * @a / 2.to_f
   end
 
+  #new comment for get_totalangles
+  #begin of get_totalangles
   def get_totalangles
     @total = @degrees.inject(:+)
   end
+  #end of get_totalangles
 
 end
