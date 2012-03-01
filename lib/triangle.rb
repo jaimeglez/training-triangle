@@ -28,6 +28,7 @@ class Triangle
   def get_area
     #Calculate te area using the next method:
     @area = @b * @a / 2.to_f
+    #Do it!
   end
 
   def get_eqside
