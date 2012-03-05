@@ -1,9 +1,29 @@
 #Class triangle
 class Triangle
 
-  #accesors variables
-  #new comment
-  #second coment
+  ##this is a header H1
+  ###this is a header H2
+  #  Hi i'm here
+  #### There are list
+  ##### Ordered
+  #3. Item1
+  #1. Item2
+  #2. Item3
+
+  ##### UnOrder
+  #* Item1
+  #* Item2
+  #* Item3
+  #
+  ##### Phrases
+  #
+  #The [Phrase Thesaurus](http://www.phrasefinder.co.uk/index.html) is a writers' resource that stimulates ideas for headlines, copy, song lyrics, fiction writing etc.
+  #
+  #Journalists, advertising copywriters, songwriters, or anyone interested in creative writing in English, can benefit from this ideas generator.
+  #
+  ##### image
+  #
+  #![Picachu](http://1.bp.blogspot.com/_OXC0ih9PGtY/S4wSMAfilwI/AAAAAAAAFL8/eUwKTZ59Fv0/s400/Picachu+1.gif)
   attr_accessor :degress, :sides
   def initialize(a,b,c)
     @sides=[a,b,c]
